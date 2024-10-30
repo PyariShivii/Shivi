@@ -7,7 +7,7 @@ $(".navbar-item").click(() => {
     $(".navbar-burger, .navbar-menu").removeClass("is-active");
 });
 
-$.get("https://api.github.com/users/kalanakt").then((resp) => {
+$.get("https://api.github.com/users/rishubot").then((resp) => {
     $("#github-info").html(`
     <article class="media m-4">
     <figure class="media-left">
@@ -49,7 +49,7 @@ $.get("https://api.github.com/users/kalanakt").then((resp) => {
 });
 
 function showRepoSlider() {
-    $.get("https://api.github.com/users/kalanakt/repos").then((resp) => {
+    $.get("https://api.github.com/users/rishubot/repos").then((resp) => {
         let repo_cards = "";
         resp.sort((a, b) => (a.stargazers_count > b.stargazers_count ? -1 : 1));
         var repo_slider = new Splide("#repo-slider", {
