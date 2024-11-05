@@ -7,7 +7,7 @@ $(".navbar-item").click(() => {
     $(".navbar-burger, .navbar-menu").removeClass("is-active");
 });
 
-$.get("https://api.github.com/users/rishubot").then((resp) => {
+$.get("https://api.github.com/users/PyariShivii").then((resp) => {
     $("#github-info").html(`
     <article class="media m-4">
     <figure class="media-left">
